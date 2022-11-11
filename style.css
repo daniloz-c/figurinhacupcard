@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: "Roboto";
+}
+
+body {
+    background: linear-gradient(150deg, #0F2B05 4.34%, #000000 87.6%);    
+    height: 100vh;
+
+    text-align: center;
+}
+
+header {
+    padding: 75px 0;
+}
+
+.card {
+    display: inline-block;
+    width: 354px;
+    height: 508px;
+
+    background-image: url(./bg-ignite.svg);
+
+    cursor: pointer;
+
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: appear 0.4s forwards;
+}
+
+.card > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #F7DD43;
+    margin-top: 115px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.info {
+    margin-top: 98px;
+    color: white;
+    margin-left: 70px;
+    text-align: left;;
+}
+
+.info h1 {
+    font-size: 18px;
+    line-height: 140px;
+}
+
+.info p {
+    font-size: 14px;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+}
